@@ -8,13 +8,13 @@ git_source(:github) do |repo_name|
 end
 
 gem 'browse-everything', github: 'uclibs/browse-everything', branch: 'master'
-gem 'hydra-remote_identifier', github: 'uclibs/hydra-remote_identifier', branch: 'setting-status'
+gem 'hydra-remote_identifier', github: 'uclibs/hydra-remote_identifier', branch: 'scholar-datacite'
 gem 'kaltura', '0.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '1.3.13'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -55,6 +55,8 @@ gem 'devise-guests', '~> 0.6'
 gem 'devise-multi_auth', git: 'https://github.com/uclibs/devise-multi_auth', branch: 'rails-5.1.6.2'
 gem 'dotenv-rails'
 gem 'equivalent-xml'
+gem 'grape'
+gem 'grape_on_rails_routes'
 gem 'hydra-role-management'
 gem 'hyrax', git: 'https://github.com/samvera/hyrax.git', tag: 'v2.3.3'
 gem 'mysql2', '~> 0.4.10'
@@ -95,6 +97,7 @@ group :test do
   gem 'coveralls', '~> 0.8.22', require: false
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  gem 'rest-client'
   gem 'rspec-activemodel-mocks'
   gem 'rspec-retry'
   gem 'selenium-webdriver', '3.12.0'
